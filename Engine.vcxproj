@@ -74,12 +74,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="d3d11.cpp" />
     <ClCompile Include="renderer.cpp" />
     <ClCompile Include="inputhandler.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sys.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="d3d11.h" />
     <ClInclude Include="renderer.h" />
     <ClInclude Include="inputhandler.h" />
     <ClInclude Include="sys.h" />
