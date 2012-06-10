@@ -1,4 +1,4 @@
 Symphony-Engine
 ===============
 
-2D Mobile Game Engine
+A Game Engine
