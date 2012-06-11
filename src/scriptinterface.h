@@ -7,14 +7,13 @@ extern "C"
    #include "lualib/lauxlib.h"
    #include "lualib/lualib.h"
 }
-
 class ScriptInterface
 {
-public:
-	ScriptInterface(void);
-	~ScriptInterface(void);
 
-	void InitializeLua(void);
+	ScriptInterface();
+	~ScriptInterface();
+
+	lua_State *LuaObj;
 
 
 };

@@ -50,9 +50,6 @@
     <Filter Include="Lua">
       <UniqueIdentifier>{64643226-11cc-4e1e-ac83-392f527a81d4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Lua\lua_lib">
-      <UniqueIdentifier>{94ba2acd-c98a-4a18-9428-dce0ef78cd3a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Input Handler">
       <UniqueIdentifier>{eda20088-2074-4f55-8117-c70d5010bca3}</UniqueIdentifier>
     </Filter>

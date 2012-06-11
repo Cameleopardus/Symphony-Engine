@@ -1,11 +1,13 @@
 #include "scriptinterface.h"
 
 
-ScriptInterface::ScriptInterface(void)
+ScriptInterface::ScriptInterface()
 {
+	LuaObj = lua_open();
 }
 
 
-ScriptInterface::~ScriptInterface(void)
+ScriptInterface::~ScriptInterface()
 {
 }
+
