@@ -34,8 +34,8 @@ private:
 	void ShutdownWindows();
 
 private:
-	LPCWSTR m_applicationName;
-	HINSTANCE m_hinstance;
+	LPCWSTR applicationName;
+	HINSTANCE hinstance;
 	HWND m_hwnd;
 
 	InputHandler* Input;

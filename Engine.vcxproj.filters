@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="src\inputhandler.cpp" />
     <ClCompile Include="src\renderer.cpp">
       <Filter>Renderer</Filter>
     </ClCompile>
@@ -17,9 +16,11 @@
     <ClCompile Include="src\scriptinterface.cpp">
       <Filter>Lua</Filter>
     </ClCompile>
+    <ClCompile Include="src\inputhandler.cpp">
+      <Filter>Input Handler</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\inputhandler.h" />
     <ClInclude Include="src\renderer.h">
       <Filter>Renderer</Filter>
     </ClInclude>
@@ -31,6 +32,9 @@
     </ClInclude>
     <ClInclude Include="src\scriptinterface.h">
       <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="src\inputhandler.h">
+      <Filter>Input Handler</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +52,9 @@
     </Filter>
     <Filter Include="Lua\lua_lib">
       <UniqueIdentifier>{94ba2acd-c98a-4a18-9428-dce0ef78cd3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input Handler">
+      <UniqueIdentifier>{eda20088-2074-4f55-8117-c70d5010bca3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

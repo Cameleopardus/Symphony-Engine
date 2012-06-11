@@ -14,7 +14,7 @@ public:
 	ScriptInterface(void);
 	~ScriptInterface(void);
 
-
+	void InitializeLua(void);
 
 
 };
