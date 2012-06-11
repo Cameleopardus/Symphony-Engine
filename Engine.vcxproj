@@ -10,6 +10,21 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\D3D11.cpp" />
+    <ClCompile Include="src\inputhandler.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\renderer.cpp" />
+    <ClCompile Include="src\scriptinterface.cpp" />
+    <ClCompile Include="src\sys.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\D3D11.h" />
+    <ClInclude Include="src\inputhandler.h" />
+    <ClInclude Include="src\renderer.h" />
+    <ClInclude Include="src\scriptinterface.h" />
+    <ClInclude Include="src\sys.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{BEC7B7E9-E562-4507-B4B4-8AE604B842EB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -20,6 +35,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -39,6 +55,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)\bin\$(Configuration)\Intermediate</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -54,6 +72,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ManifestFile>$(IntDir)$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -73,19 +92,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="d3d11.cpp" />
-    <ClCompile Include="renderer.cpp" />
-    <ClCompile Include="inputhandler.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="sys.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="d3d11.h" />
-    <ClInclude Include="renderer.h" />
-    <ClInclude Include="inputhandler.h" />
-    <ClInclude Include="sys.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

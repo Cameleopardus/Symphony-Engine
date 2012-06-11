@@ -1,48 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="d3d11.cpp">
-      <Filter>Rendering\D3D11</Filter>
-    </ClCompile>
-    <ClCompile Include="renderer.cpp">
-      <Filter>Rendering</Filter>
-    </ClCompile>
-    <ClCompile Include="inputhandler.cpp">
-      <Filter>Input</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
-    <ClCompile Include="sys.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
+    <ClCompile Include="src\D3D11.cpp" />
+    <ClCompile Include="src\inputhandler.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\renderer.cpp" />
+    <ClCompile Include="src\scriptinterface.cpp" />
+    <ClCompile Include="src\sys.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="d3d11.h">
-      <Filter>Rendering\D3D11</Filter>
-    </ClInclude>
-    <ClInclude Include="renderer.h">
-      <Filter>Rendering</Filter>
-    </ClInclude>
-    <ClInclude Include="inputhandler.h">
-      <Filter>Input</Filter>
-    </ClInclude>
-    <ClInclude Include="sys.h">
-      <Filter>Main</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Rendering">
-      <UniqueIdentifier>{ba47a00e-09b1-4b0f-b5ea-5b23a33474d7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Rendering\D3D11">
-      <UniqueIdentifier>{ecd25efd-1cdb-46d9-841b-968a8a5fbcf1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Input">
-      <UniqueIdentifier>{73dbd247-0dc1-454c-babf-84fce3e98a87}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Main">
-      <UniqueIdentifier>{150328c6-eb35-4113-9e9c-cadcac6762a3}</UniqueIdentifier>
-    </Filter>
+    <ClInclude Include="src\D3D11.h" />
+    <ClInclude Include="src\inputhandler.h" />
+    <ClInclude Include="src\renderer.h" />
+    <ClInclude Include="src\scriptinterface.h" />
+    <ClInclude Include="src\sys.h" />
   </ItemGroup>
 </Project>
