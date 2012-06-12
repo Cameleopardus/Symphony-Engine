@@ -111,7 +111,7 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)\bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)\bin\$(Configuration)\Intermediate</IntDir>
-    <LibraryPath>C:\Users\rooster\Desktop\Symphony Engine\Symphony-Engine\src\lualib\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
