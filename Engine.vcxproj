@@ -13,6 +13,37 @@
   <ItemGroup>
     <ClCompile Include="src\D3D11.cpp" />
     <ClCompile Include="src\inputhandler.cpp" />
+    <ClCompile Include="src\lualib\src\lapi.c" />
+    <ClCompile Include="src\lualib\src\lauxlib.c" />
+    <ClCompile Include="src\lualib\src\lbaselib.c" />
+    <ClCompile Include="src\lualib\src\lcode.c" />
+    <ClCompile Include="src\lualib\src\ldblib.c" />
+    <ClCompile Include="src\lualib\src\ldebug.c" />
+    <ClCompile Include="src\lualib\src\ldo.c" />
+    <ClCompile Include="src\lualib\src\ldump.c" />
+    <ClCompile Include="src\lualib\src\lfunc.c" />
+    <ClCompile Include="src\lualib\src\lgc.c" />
+    <ClCompile Include="src\lualib\src\linit.c" />
+    <ClCompile Include="src\lualib\src\liolib.c" />
+    <ClCompile Include="src\lualib\src\llex.c" />
+    <ClCompile Include="src\lualib\src\lmathlib.c" />
+    <ClCompile Include="src\lualib\src\lmem.c" />
+    <ClCompile Include="src\lualib\src\loadlib.c" />
+    <ClCompile Include="src\lualib\src\lobject.c" />
+    <ClCompile Include="src\lualib\src\lopcodes.c" />
+    <ClCompile Include="src\lualib\src\loslib.c" />
+    <ClCompile Include="src\lualib\src\lparser.c" />
+    <ClCompile Include="src\lualib\src\lstate.c" />
+    <ClCompile Include="src\lualib\src\lstring.c" />
+    <ClCompile Include="src\lualib\src\lstrlib.c" />
+    <ClCompile Include="src\lualib\src\ltable.c" />
+    <ClCompile Include="src\lualib\src\ltablib.c" />
+    <ClCompile Include="src\lualib\src\ltm.c" />
+    <ClCompile Include="src\lualib\src\lua.c" />
+    <ClCompile Include="src\lualib\src\lundump.c" />
+    <ClCompile Include="src\lualib\src\lvm.c" />
+    <ClCompile Include="src\lualib\src\lzio.c" />
+    <ClCompile Include="src\lualib\src\print.c" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\renderer.cpp" />
     <ClCompile Include="src\scriptinterface.cpp" />
@@ -21,6 +52,29 @@
   <ItemGroup>
     <ClInclude Include="src\D3D11.h" />
     <ClInclude Include="src\inputhandler.h" />
+    <ClInclude Include="src\lualib\src\lapi.h" />
+    <ClInclude Include="src\lualib\src\lauxlib.h" />
+    <ClInclude Include="src\lualib\src\lcode.h" />
+    <ClInclude Include="src\lualib\src\ldebug.h" />
+    <ClInclude Include="src\lualib\src\ldo.h" />
+    <ClInclude Include="src\lualib\src\lfunc.h" />
+    <ClInclude Include="src\lualib\src\lgc.h" />
+    <ClInclude Include="src\lualib\src\llex.h" />
+    <ClInclude Include="src\lualib\src\llimits.h" />
+    <ClInclude Include="src\lualib\src\lmem.h" />
+    <ClInclude Include="src\lualib\src\lobject.h" />
+    <ClInclude Include="src\lualib\src\lopcodes.h" />
+    <ClInclude Include="src\lualib\src\lparser.h" />
+    <ClInclude Include="src\lualib\src\lstate.h" />
+    <ClInclude Include="src\lualib\src\lstring.h" />
+    <ClInclude Include="src\lualib\src\ltable.h" />
+    <ClInclude Include="src\lualib\src\ltm.h" />
+    <ClInclude Include="src\lualib\src\lua.h" />
+    <ClInclude Include="src\lualib\src\luaconf.h" />
+    <ClInclude Include="src\lualib\src\lualib.h" />
+    <ClInclude Include="src\lualib\src\lundump.h" />
+    <ClInclude Include="src\lualib\src\lvm.h" />
+    <ClInclude Include="src\lualib\src\lzio.h" />
     <ClInclude Include="src\renderer.h" />
     <ClInclude Include="src\scriptinterface.h" />
     <ClInclude Include="src\sys.h" />
@@ -57,10 +111,13 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)\bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)\bin\$(Configuration)\Intermediate</IntDir>
-    <LibraryPath>C:\Users\rooster\Desktop\Symphony Engine\Symphony-Engine\src\lualib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\rooster\Desktop\Symphony Engine\Symphony-Engine\src\lualib\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IncludePath>C:\Users\rooster\Desktop\Symphony Engine\Symphony-Engine\src\lualib\src;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\rooster\Desktop\Symphony Engine\Symphony-Engine\src\lualib\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -74,6 +131,8 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ManifestFile>$(IntDir)$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
+      <AdditionalLibraryDirectories>C:\Users\rooster\Desktop\Symphony Engine\Symphony-Engine\src\lualib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

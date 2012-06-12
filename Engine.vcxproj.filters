@@ -19,6 +19,99 @@
     <ClCompile Include="src\inputhandler.cpp">
       <Filter>Input Handler</Filter>
     </ClCompile>
+    <ClCompile Include="src\lualib\src\print.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lzio.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lvm.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lundump.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lua.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\ltm.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\ltablib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\ltable.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lstrlib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lstring.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lstate.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lparser.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\loslib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lopcodes.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lobject.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\loadlib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lmem.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lmathlib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\llex.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\liolib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\linit.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lgc.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lfunc.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\ldump.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\ldo.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\ldebug.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\ldblib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lcode.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lbaselib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lauxlib.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lualib\src\lapi.c">
+      <Filter>Lua\lualib\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\renderer.h">
@@ -36,6 +129,75 @@
     <ClInclude Include="src\inputhandler.h">
       <Filter>Input Handler</Filter>
     </ClInclude>
+    <ClInclude Include="src\lualib\src\lzio.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lvm.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lundump.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lualib.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\luaconf.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lua.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\ltm.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\ltable.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lstring.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lstate.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lparser.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lopcodes.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lobject.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lmem.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\llimits.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\llex.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lgc.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lfunc.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\ldo.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\ldebug.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lcode.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lauxlib.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lualib\src\lapi.h">
+      <Filter>Lua\lualib\headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Renderer">
@@ -52,6 +214,15 @@
     </Filter>
     <Filter Include="Input Handler">
       <UniqueIdentifier>{eda20088-2074-4f55-8117-c70d5010bca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua\lualib">
+      <UniqueIdentifier>{f65bc233-be24-48eb-b3db-ca51b559b284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua\lualib\src">
+      <UniqueIdentifier>{6c732626-4887-4dd4-8379-5b730a0b52d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua\lualib\headers">
+      <UniqueIdentifier>{8b495d40-9673-4000-8326-da331a5abf44}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

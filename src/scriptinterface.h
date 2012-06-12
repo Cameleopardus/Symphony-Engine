@@ -1,12 +1,14 @@
 #ifndef _SCRIPTINTERFACE_H_
 #define _SCRIPTINTERFACE_H_
 
+
 extern "C"
 {
-   #include "lualib/lua.h"
-   #include "lualib/lauxlib.h"
-   #include "lualib/lualib.h"
+   #include "lualib/src/lua.h"
+   #include "lualib/src/lauxlib.h"
+   #include "lualib/src/lualib.h"
 }
+
 class ScriptInterface
 {
 
