@@ -14,8 +14,9 @@ class ScriptInterface
 
 	ScriptInterface();
 	~ScriptInterface();
+	lua_State *Lua;
 
-	lua_State *LuaObj;
+		void CloseLuaState();
 
 
 };
