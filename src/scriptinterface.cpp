@@ -25,5 +25,5 @@ void ScriptInterface::CloseLuaState(lua_State *LSTATE)
 
 void ScriptInterface::RegisterLuaFunction(lua_State *LSTATE, const char *NAME, lua_CFunction FUNC)
 {
-
+	lua_register(LSTATE,NAME,FUNC);
 }
