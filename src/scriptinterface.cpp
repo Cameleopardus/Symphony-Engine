@@ -14,10 +14,16 @@ ScriptInterface::ScriptInterface()
 
 ScriptInterface::~ScriptInterface()
 {
+	ScriptInterface::CloseLuaState(Lua);
 }
 
 
 void ScriptInterface::CloseLuaState(lua_State *LSTATE)
 {
 	lua_close(LSTATE);
+}
+
+void ScriptInterface::RegisterLuaFunction(lua_State *LSTATE, const char *NAME, lua_CFunction FUNC)
+{
+
 }

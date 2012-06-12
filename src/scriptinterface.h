@@ -17,7 +17,7 @@ class ScriptInterface
 	lua_State *Lua;
 
 	void CloseLuaState(lua_State *L);
-	void RegisterLuaFunction();
+	void RegisterLuaFunction(lua_State *L, const char *N, lua_CFunction F);
 
 };
 
