@@ -17,7 +17,7 @@ ScriptInterface::~ScriptInterface()
 }
 
 
-void ScriptInterface::CloseLuaState()
+void ScriptInterface::CloseLuaState(lua_State *LSTATE)
 {
-	lua_close(Lua);
+	lua_close(LSTATE);
 }
